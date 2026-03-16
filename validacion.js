@@ -32,19 +32,14 @@ function validarNombre() {
   if (campo.validity.tooShort) {
     mostrarError(
       "nombre",
-      `El 
-nombre 
-${campo.minLength} caracteres.`,
+      `El nombre debe tener al menos ${campo.minLength} caracteres.`,
     );
     return false;
   }
   limpiarError("nombre");
   return true;
 }
-debe;
-tener;
-al;
-menos;
+
 function validarEmail() {
   const campo = document.querySelector("#email");
   if (campo.validity.valueMissing) {
